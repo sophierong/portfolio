@@ -51,7 +51,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             enableSystem
             disableTransitionOnChange
           >
-            <div className="fixed top-4 left-0 right-0 z-50 w-full">
+            <div className="absolute top-4 left-0 right-0 z-50">
               <CustomNavbar />
             </div>
             <main
