@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: "Sophie Rong",
   description: "Sophie's creative portfolio",
 };
- 
+
 type RootLayoutProps = {
   children: React.ReactNode;
 };
@@ -35,9 +35,14 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <html lang="en" suppressHydrationWarning className={`scroll-smooth ${geistSans.className} antialiased`}>
+      <html
+        lang="en"
+        suppressHydrationWarning
+        className={`scroll-smooth ${geistSans.className} antialiased`}
+      >
         <head />
-        <body className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased
         bg-zinc-100 dark:bg-zinc-900`}
         >
           <ThemeProvider
@@ -46,8 +51,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
             enableSystem
             disableTransitionOnChange
           >
-            <CustomNavbar />
-            <main className="w-full
+            <div className="fixed top-4 left-0 right-0 z-50 w-full">
+              <CustomNavbar />
+            </div>
+            <main
+              className="relative z-10 w-full
               flex flex-col justify-center items-center
               mx-auto overflow-hidden
               px-10 md:px-20 lg:px-30 xl:px-40
@@ -61,5 +69,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </body>
       </html>
     </>
-  )
+  );
 }
