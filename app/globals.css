@@ -87,7 +87,7 @@
 
   --radius-lg: var(--radius);
 
-  --radius-xl: calc(var(--radius) + 4px)
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 :root {
@@ -168,13 +168,22 @@
   }
 }
 
+@theme {
+  --color-cream-50: oklch(0.9885 0.0057 84.57);
+  --color-cream-100: oklch(0.9773 0.0102 81.8);
+  --color-cream-200: oklch(0.9521 0.0221 80.69);
+  --color-cream-300: oklch(0.915 0.0382 81.5);
+  --color-cream-400: oklch(0.8597 0.0526 76.49);
+  --color-cream-500: oklch(0.7925 0.0649 67.44);
+}
+
 /* Custom classes */
 .paragraph {
-  @apply text-base text-zinc-700 dark:text-zinc-300
+  @apply text-base text-zinc-700 dark:text-zinc-300;
 }
 
 .hyperlink {
   @apply transition-all duration-200 ease-in-out
     text-indigo-700 dark:text-indigo-300
-    hover:text-indigo-900 dark:hover:text-indigo-200
+    hover:text-indigo-900 dark:hover:text-indigo-200;
 }

@@ -67,30 +67,7 @@ export default function Home() {
           Skills
         </h1>
 
-        {/* <SkillsSection /> */}
-        <div className="flex justify-center items-center ml-5 mr-5">
-          <div>
-            <p className="mt-8 paragraph">
-              <b>Languages</b>: Python, JavaScript, TypeScript, SQL, HTML/CSS,
-              LaTeX
-            </p>
-
-            <p className="mt-4 paragraph">
-              <b>Frameworks/Libraries</b>: React, Next.js, Tailwind CSS,
-              FastAPI, SQLite
-            </p>
-
-            <p className="mt-4 paragraph">
-              <b>Software</b>: Git, Adobe Creative Suite (Illustrator,
-              Photoshop, Premiere Pro), Figma
-            </p>
-
-            <p className="mt-4 paragraph">
-              <b>Languages (spoken)</b>: English and Chinese (native/bilingual),
-              Spanish (limited working proficiency)
-            </p>
-          </div>
-        </div>
+        <SkillsSection />
       </section>
 
       <section id="contact" className="mt-10 mb-10 text-center">

@@ -88,7 +88,7 @@ export const NavBody = ({ children, className }: NavBodyProps) => {
   return (
     <div
       className={cn(
-        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-transparent px-10 md:px-20 lg:px-30 xl:px-40 py-2 md:flex dark:bg-transparent min-w-800px",
+        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-transparent px-10 md:px-20 lg:px-30 xl:px-40 md:flex dark:bg-transparent min-w-800px",
         className
       )}
     >
