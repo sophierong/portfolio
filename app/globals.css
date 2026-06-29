@@ -191,7 +191,7 @@
 
 /* Hyperlink */
 .hyperlink {
-  @apply transition-all duration-200 ease-in-out
+  @apply transition-colors duration-200 ease-in-out
     text-indigo-700 dark:text-indigo-300
     hover:text-indigo-900 dark:hover:text-indigo-200;
 }
@@ -200,21 +200,38 @@
 .nav-link {
   @apply text-zinc-600 dark:text-zinc-300
     hover:text-zinc-400 dark:hover:text-zinc-500
-    text-sm font-medium tracking-wide
+    text-sm font-medium
     transition duration-200;
+}
+
+/* Footer Link */
+.footer-link {
+  @apply transition-colors duration-200 ease-in-out
+    text-zinc-200 dark:text-zinc-300
+    hover:text-indigo-400 dark:hover:text-indigo-500;
 }
 
 /* Section header */
 .section-header {
-  @apply font-serif font-normal text-4xl;
+  @apply font-serif font-normal text-4xl text-zinc-800 dark:text-zinc-200;
 }
 
 /* Subsection header */
-.sub-header {
-  @apply text-zinc-700 dark:text-zinc-200 font-serif font-normal text-2xl;
+.header-2 {
+  @apply text-zinc-700 dark:text-zinc-200 font-serif font-medium text-2xl;
+}
+
+/* Smaller header */
+.header-3 {
+  @apply text-zinc-700 dark:text-zinc-200 font-serif font-normal text-xl;
 }
 
 .project-card {
   @apply bg-zinc-200/50 dark:bg-zinc-950/50
     dark:border-zinc-300/20 border-zinc-900/20;
+}
+
+/* Padding for main content */
+.padded-content {
+  @apply px-10 md:px-20 lg:px-30 xl:px-40;
 }

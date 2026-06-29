@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={`relative ${geistSans.variable} ${geistMono.variable} ${newsreader.variable} antialiased
-        bg-cream-100 dark:bg-zinc-900`}
+        bg-olive-100 dark:bg-zinc-900`}
         >
           <ThemeProvider
             attribute="class"
@@ -58,9 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <main
               className="relative z-10 w-full
               flex flex-col justify-center items-center
-              mx-auto overflow-hidden
-              px-10 md:px-20 lg:px-30 xl:px-40
-              mb-16"
+              mx-auto overflow-hidden"
             >
               {children}
               <Analytics />

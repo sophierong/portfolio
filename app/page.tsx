@@ -10,8 +10,8 @@ export default function Home() {
       <BackgroundGradientAnimation containerClassName="h-screen" />
       <Hero />
 
-      <section id="projects" className="mt-10 mb-10">
-        <h1 className="section-header relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
+      <section id="projects" className="padded-content mt-10 mb-10">
+        <h1 className="section-header relative text-4xl font-semibold text-center">
           Projects
         </h1>
 
@@ -19,7 +19,7 @@ export default function Home() {
           <ProjectCard
             projectName="picChef"
             description="A full-stack recipe identification app powered by Gemini image recognition."
-            link="https://github.com/sophie900/picChef"
+            link="https://github.com/sophierong/picChef"
             imagePath="/picChef.png"
             tags={[
               "React",
@@ -62,57 +62,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="skills" className="mt-10 mb-10 w-full">
-        <h1 className="section-header relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
+      <section id="skills" className="padded-content mt-10 mb-10 w-full">
+        <h1 className="section-header relative text-4xl font-semibold text-center ">
           Skills
         </h1>
 
         <SkillsSection />
       </section>
 
-      <section id="contact" className="mt-10 mb-10 text-center">
-        <h1 className="section-header relative text-4xl font-semibold  text-zinc-800 dark:text-zinc-200">
+      <section
+        id="contact"
+        className="padded-content mt-10 text-center w-full bg-olive-700 dark:bg-olive-950/50 py-20"
+      >
+        <h1 className="font-serif font-normal text-4xl  text-zinc-100 dark:text-zinc-300 mb-4">
           Let&apos;s get in touch!
         </h1>
-        <p className="paragraph pt-8">
-          Email:{" "}
-          <Link href="mailto:sophie.rong@gmail.com" className="hyperlink">
-            sophie.rong@gmail.com
-          </Link>
+        <p className="font-serif text-lg italic text-zinc-300 dark:text-zinc-400 mb-8">
+          Have any ideas you want to share? Feel free to shoot me a DM!
         </p>
+        <span className="flex flex-row gap-8 justify-center items-center">
+          <Link href="mailto:sophie.rong@gmail.com" className="footer-link">
+            Email
+          </Link>
 
-        <p className="paragraph">
-          LinkedIn:{" "}
           <Link
             href="https://www.linkedin.com/in/sophie-rong"
             target="_blank"
-            className="hyperlink"
+            className="footer-link"
           >
-            sophie-rong
+            LinkedIn
           </Link>
-        </p>
 
-        <p className="paragraph">
-          GitHub:{" "}
           <Link
-            href="https://www.github.com/sophie900"
+            href="https://www.github.com/sophierong"
             target="_blank"
-            className="hyperlink"
+            className="footer-link"
           >
-            sophie900
+            GitHub
           </Link>
-        </p>
-
-        <p className="paragraph">
-          Instagram:{" "}
-          <Link
-            href="https://www.instagram.com/sr_the_artist"
-            target="_blank"
-            className="hyperlink"
-          >
-            sr_the_artist
-          </Link>
-        </p>
+        </span>
       </section>
     </>
   );

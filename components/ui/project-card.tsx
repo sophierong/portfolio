@@ -36,7 +36,7 @@ export const ProjectCard = ({
             />
           </CardItem>
 
-          <CardItem className="sub-header mt-6">{projectName}</CardItem>
+          <CardItem className="header-2 mt-6">{projectName}</CardItem>
 
           <CardItem as="p" className="description max-w-sm mt-1">
             {description}
