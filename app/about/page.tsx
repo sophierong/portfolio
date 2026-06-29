@@ -8,7 +8,7 @@ export default function About() {
 
       <div className="max-w-3xl mt-8 flex flex-col md:flex-row gap-8">
         <Image
-          src="/profile.jpg"
+          src="/profile.JPG"
           alt="Image of me at the beach"
           width={0}
           height={0}
