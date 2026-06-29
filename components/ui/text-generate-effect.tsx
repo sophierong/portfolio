@@ -40,18 +40,19 @@ export const TextGenerateEffect = ({
                 key={word + idx}
                 className="dark:text-zinc-200 text-zinc-800 opacity-0 font-sans"
                 style={{
-                    filter: filter ? "blur(10px)" : "none",
+                  filter: filter ? "blur(10px)" : "none",
                 }}
               >
                 {word}{" "}
               </motion.span>
-            ); } else if ([4, 13].includes(idx)) {
+            );
+          } else if ([4, 13].includes(idx)) {
             return (
               <motion.span
                 key={word + idx}
-                className="dark:text-zinc-400 text-zinc-500 opacity-0 font-serif font-normal italic pr-1"
+                className="dark:text-zinc-400 text-zinc-500 opacity-0 font-serif font-[350] italic pr-1"
                 style={{
-                    filter: filter ? "blur(10px)" : "none",
+                  filter: filter ? "blur(10px)" : "none",
                 }}
               >
                 {word}{" "}
@@ -63,7 +64,7 @@ export const TextGenerateEffect = ({
                 key={word + idx}
                 className="dark:text-zinc-400 text-zinc-500 opacity-0 font-sans"
                 style={{
-                    filter: filter ? "blur(10px)" : "none",
+                  filter: filter ? "blur(10px)" : "none",
                 }}
               >
                 {word}{" "}

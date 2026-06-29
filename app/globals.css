@@ -8,7 +8,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --font-mono: var(--font-geist-mono), Courier, monospace;
-  --font-serif: var(--font-instrument-serif), Times, serif;
+  --font-serif: var(--font-newsreader), Times, serif;
 
   --animate-first: moveVertical 30s ease infinite;
   --animate-second: moveInCircle 20s reverse infinite;
@@ -186,4 +186,8 @@
   @apply transition-all duration-200 ease-in-out
     text-indigo-700 dark:text-indigo-300
     hover:text-indigo-900 dark:hover:text-indigo-200;
+}
+
+.section-header {
+  @apply font-serif font-normal;
 }

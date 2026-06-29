@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import CustomNavbar from "@/components/ui/custom-navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
@@ -17,9 +17,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const instrumentSerif = Instrument_Serif({
-  weight: "400",
-  variable: "--font-instrument-serif",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
 });
 
@@ -38,11 +37,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html
         lang="en"
         suppressHydrationWarning
-        className={`scroll-smooth ${geistSans.className} antialiased`}
+        className={`relative scroll-smooth ${geistSans.className} antialiased`}
+        data-scroll-behavior="smooth"
       >
         <head />
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased
+          className={`relative ${geistSans.variable} ${geistMono.variable} ${newsreader.variable} antialiased
         bg-cream-100 dark:bg-zinc-900`}
         >
           <ThemeProvider

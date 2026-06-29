@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
 
       <section id="projects" className="mt-10 mb-10">
-        <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
+        <h1 className="section-header relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
           Projects
         </h1>
 
@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       <section id="skills" className="mt-10 mb-10 w-full">
-        <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
+        <h1 className="section-header relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
           Skills
         </h1>
 
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="mt-10 mb-10 text-center">
-        <h1 className="relative text-4xl font-semibold  text-zinc-800 dark:text-zinc-200">
+        <h1 className="section-header relative text-4xl font-semibold  text-zinc-800 dark:text-zinc-200">
           Let&apos;s get in touch!
         </h1>
         <p className="paragraph pt-8">
