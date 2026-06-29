@@ -178,16 +178,43 @@
 }
 
 /* Custom classes */
+
+/* Paragraph text */
 .paragraph {
   @apply text-base text-zinc-700 dark:text-zinc-300;
 }
 
+/* Descriptive text */
+.description {
+  @apply text-zinc-500 dark:text-zinc-400 text-sm;
+}
+
+/* Hyperlink */
 .hyperlink {
   @apply transition-all duration-200 ease-in-out
     text-indigo-700 dark:text-indigo-300
     hover:text-indigo-900 dark:hover:text-indigo-200;
 }
 
+/* Navigation link */
+.nav-link {
+  @apply text-zinc-600 dark:text-zinc-300
+    hover:text-zinc-400 dark:hover:text-zinc-500
+    text-sm font-medium tracking-wide
+    transition duration-200;
+}
+
+/* Section header */
 .section-header {
-  @apply font-serif font-normal;
+  @apply font-serif font-normal text-4xl;
+}
+
+/* Subsection header */
+.sub-header {
+  @apply text-zinc-700 dark:text-zinc-200 font-serif font-normal text-2xl;
+}
+
+.project-card {
+  @apply bg-zinc-200/50 dark:bg-zinc-950/50
+    dark:border-zinc-300/20 border-zinc-900/20;
 }

@@ -104,7 +104,7 @@ export const NavItems = ({ items, className }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "relative hidden flex-1 flex-row items-center right-6 justify-end space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 md:flex md:space-x-2",
+        "relative hidden flex-1 flex-row items-center right-6 justify-end space-x-2 md:flex md:space-x-2",
         className
       )}
     >
@@ -112,8 +112,7 @@ export const NavItems = ({ items, className }: NavItemsProps) => {
         <Link
           onMouseEnter={() => setHovered(idx)}
           className="relative px-1 py-1 mx-5
-          text-zinc-600 dark:text-zinc-300
-            hover:text-zinc-400 dark:hover:text-zinc-500
+            nav-link
             transition-colors duration-300
           "
           key={`link-${idx}`}
