@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Geist, Geist_Mono, Newsreader } from "next/font/google";
+import { TASA_Orbiter, Geist_Mono, Newsreader } from "next/font/google";
 import CustomNavbar from "@/components/ui/custom-navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 /* Fonts */
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const tasaOrbiter = TASA_Orbiter({
+  variable: "--font-tasa-orbiter",
   subsets: ["latin"],
 });
 
@@ -37,12 +37,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html
         lang="en"
         suppressHydrationWarning
-        className={`relative scroll-smooth ${geistSans.className} antialiased`}
+        className={`relative scroll-smooth ${tasaOrbiter.className} antialiased`}
         data-scroll-behavior="smooth"
       >
         <head />
         <body
-          className={`relative ${geistSans.variable} ${geistMono.variable} ${newsreader.variable} antialiased
+          className={`relative ${tasaOrbiter.variable} ${geistMono.variable} ${newsreader.variable} antialiased
         bg-olive-100 dark:bg-zinc-900`}
         >
           <ThemeProvider
