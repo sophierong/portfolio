@@ -173,7 +173,7 @@ export const MobileNavMenu = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className={cn(
-            "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-zinc-100 px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-zinc-950",
+            "fixed inset-0 z-50 flex w-full flex-col items-center justify-center gap-8 rounded-lg bg-zinc-100 dark:bg-zinc-950 px-4 py-20 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
             className
           )}
         >
@@ -193,12 +193,12 @@ export const MobileNavToggle = ({
 }) => {
   return isOpen ? (
     <IconX
-      className="text-zinc-800 dark:text-zinc-100 hover:cursor-pointer"
+      className="fixed right-10 md:right-20 z-100 text-zinc-800 dark:text-zinc-100 hover:cursor-pointer"
       onClick={onClick}
     />
   ) : (
     <IconMenu2
-      className="text-zinc-800 dark:text-zinc-100 hover:cursor-pointer"
+      className="z-100 text-zinc-800 dark:text-zinc-100 hover:cursor-pointer"
       onClick={onClick}
     />
   );

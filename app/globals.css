@@ -163,9 +163,6 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 
 @theme {
@@ -218,12 +215,12 @@
 
 /* Subsection header */
 .header-2 {
-  @apply text-zinc-700 dark:text-zinc-200 font-serif font-medium text-2xl;
+  @apply font-serif font-medium text-2xl text-zinc-700 dark:text-zinc-200;
 }
 
 /* Smaller header */
 .header-3 {
-  @apply text-zinc-700 dark:text-zinc-200 font-serif font-normal text-xl;
+  @apply font-serif font-medium text-xl text-zinc-700 dark:text-zinc-200;
 }
 
 .project-card {
