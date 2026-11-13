@@ -45,6 +45,17 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
 
+  /* Accent color: pink */
+  --color-accent-white: #e0e2db;
+  --color-background-footer: #313131;
+
+  --color-accent-base: #f6bae4;
+  --color-accent-text: #b20b80;
+
+  /* --color-accent-pink: #f9929b; */
+  --color-accent-base-dark: #4f2141;
+  --color-accent-text-dark: #e699cf;
+
   @keyframes moveHorizontal {
     0% {
       transform: translateX(-50%) translateY(-10%);

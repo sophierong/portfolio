@@ -10,7 +10,7 @@ const SkillsSection = () => {
 
       <Bento
         title="Libraries"
-        items={["React", "Next.js", "Tailwind CSS", "pandas", "skikit-learn"]}
+        items={["React", "Next.js", "Tailwind CSS", "pandas", "scikit-learn"]}
       ></Bento>
 
       <Bento

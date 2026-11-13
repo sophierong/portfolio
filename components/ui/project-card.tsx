@@ -33,6 +33,7 @@ export const ProjectCard = ({
               width={1440}
               className="w-full object-cover rounded-lg"
               alt={projectName + " thumbnail"}
+              loading="eager"
             />
           </CardItem>
 

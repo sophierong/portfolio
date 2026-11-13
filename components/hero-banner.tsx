@@ -2,7 +2,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   const slogan =
-    "Sophie Rong is a creator, artist, and developer. She loves clean interfaces & thoughtful technology.";
+    "Sophie Rong is a creator, artist, and developer. She loves intuitive interfaces & thoughtful technology.";
 
   return (
     <div className="padded-content h-screen flex flex-col items-start justify-end pb-24">
@@ -13,7 +13,7 @@ const Hero = () => {
         />
 
         <p className="font-mono text-zinc-400 mt-4 mb-4 text-sm md:text-base">
-          CS @ UCI / Former designer @ UCI Design-a-thon
+          CS @ UCI / Former Undergrad Research Assistant @ UC Irvine ISG
         </p>
 
         {/* Profile icon links */}
