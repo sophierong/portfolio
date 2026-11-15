@@ -8,10 +8,11 @@ export const Bento = ({
   return (
     <div
       className="
-        border rounded-2xl p-8 break-words
+        border rounded-2xl p-8 wrap-break-word
         w-full md:w-80
         grid grid-cols-[4fr_5fr] gap-4
-        md:grid-cols-1 md:gap-2
+        md:flex md:flex-col md:justify-start
+        min-w-0
       "
     >
       <h1 className="header-3">{title}</h1>

@@ -49,12 +49,14 @@
   --color-accent-white: #e0e2db;
   --color-background-footer: #313131;
 
-  --color-accent-base: #f6bae4;
-  --color-accent-text: #b20b80;
+  --color-accent-base: #fac5eb;
+  --color-accent-text: #d31a9b;
+  --color-accent-text-hover: #f97ad3;
 
   /* --color-accent-pink: #f9929b; */
   --color-accent-base-dark: #4f2141;
   --color-accent-text-dark: #e699cf;
+  --color-accent-text-dark-hover: #e54db8;
 
   @keyframes moveHorizontal {
     0% {
@@ -200,8 +202,8 @@
 /* Hyperlink */
 .hyperlink {
   @apply transition-colors duration-200 ease-in-out
-    text-indigo-700 dark:text-indigo-300
-    hover:text-indigo-900 dark:hover:text-indigo-200;
+    text-accent-text dark:text-accent-text-dark
+    hover:text-accent-text-hover dark:hover:text-accent-text-dark-hover;
 }
 
 /* Navigation link */
@@ -217,6 +219,11 @@
   @apply transition-colors duration-200 ease-in-out
     text-zinc-200 dark:text-zinc-300
     hover:text-indigo-400 dark:hover:text-indigo-500;
+}
+
+/* Big header */
+.big-header {
+  @apply font-serif font-normal text-5xl text-zinc-800 dark:text-zinc-200;
 }
 
 /* Section header */
@@ -242,4 +249,9 @@
 /* Padding for main content */
 .padded-content {
   @apply px-10 md:px-20 lg:px-30 xl:px-40;
+}
+
+/* Hero social icon */
+.hero-social-icon {
+  @apply text-zinc-400 dark:text-zinc-300 hover:text-zinc-500 dark:hover:text-zinc-100;
 }

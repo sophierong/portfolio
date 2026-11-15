@@ -21,7 +21,7 @@ const Hero = () => {
           <a
             href="https://www.linkedin.com/in/sophie-rong/"
             target="_blank"
-            className="text-zinc-400 dark:text-zinc-300 hover:text-zinc-500 dark:hover:text-zinc-200"
+            className="hero-social-icon"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,9 +36,9 @@ const Hero = () => {
           </a>
 
           <a
-            href="https://github.com/sophie900"
+            href="https://github.com/sophierong"
             target="_blank"
-            className="text-zinc-400 dark:text-zinc-300 hover:text-zinc-500 dark:hover:text-zinc-200"
+            className="hero-social-icon"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
