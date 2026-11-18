@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { UnrollImage } from "@/components/ui/unroll-image";
+import { StaggerReveal } from "@/components/ui/stagger-reveal";
 
 export default function About() {
   return (
@@ -19,7 +20,7 @@ export default function About() {
         /> */}
         <UnrollImage src="/profile.JPG" alt="Me at the beach" />
 
-        <div className="md:w-100 lg:w-140 paragraph grid gap-4 justify-start items-baseline">
+        <StaggerReveal className="md:w-100 lg:w-140 paragraph grid gap-4 justify-start items-baseline">
           <h2 className="header-2">Thanks for stopping by! 💛</h2>
 
           <p>
@@ -75,7 +76,9 @@ export default function About() {
               </Link>
             </li>
           </ul>
-        </div>
+        </StaggerReveal>
+
+        {/* <div className="md:w-100 lg:w-140 paragraph grid gap-4 justify-start items-baseline"></div> */}
       </div>
     </div>
   );

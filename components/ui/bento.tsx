@@ -10,7 +10,9 @@ export const Bento = ({
       className="
         border rounded-2xl p-8 wrap-break-word
         w-full md:w-80
-        grid grid-cols-[4fr_5fr] gap-4
+        flex flex-col justify-start
+        sm:grid sm:gap-4
+        sm:grid-cols-[4fr_5fr]
         md:flex md:flex-col md:justify-start
         min-w-0
       "

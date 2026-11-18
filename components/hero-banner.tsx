@@ -12,7 +12,7 @@ const Hero = () => {
           className="font-semibold w-full md:w-[75%] mb-8"
         />
 
-        <p className="font-mono text-zinc-400 mt-4 mb-4 text-sm md:text-base">
+        <p className="font-mono text-zinc-400 mt-4 mb-4 text-xs md:text-sm lg:text-base">
           CS @ UCI / Former Undergrad Research Assistant @ UC Irvine ISG
         </p>
 

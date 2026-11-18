@@ -15,7 +15,7 @@ export default function Home() {
           Projects
         </h1>
 
-        <div className="flex flex-row flex-wrap justify-center items-start gap-[2vw] font-sans mt-10 mb-10">
+        <div className="flex flex-row flex-wrap justify-center gap-[2vw] font-sans mt-10 mb-10">
           <ProjectCard
             projectName="picChef"
             description="A full-stack recipe identification app powered by Gemini image recognition."
