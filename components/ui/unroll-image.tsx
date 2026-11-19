@@ -1,15 +1,17 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
 type UnrollImageProps = {
   src: string;
   alt: string;
+  width: number;
+  height: number;
 };
 
-export const UnrollImage = ({ src, alt }: UnrollImageProps) => {
+export const UnrollImage = ({ src, alt, width, height }: UnrollImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -29,9 +31,9 @@ export const UnrollImage = ({ src, alt }: UnrollImageProps) => {
       <Image
         src={src}
         alt={alt}
-        width={0}
-        height={0}
-        sizes="(max-width: 768px) 100vw, 320px"
+        width={width}
+        height={height}
+        sizes="(max-width: 768px) 400px, (max-width: 1024px) 320px, 360px"
         priority
         onLoad={() => setIsLoaded(true)}
         className="block w-full h-auto"

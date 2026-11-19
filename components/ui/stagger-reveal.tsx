@@ -128,6 +128,7 @@ const StaggerItem = ({
       animate={controls}
       onViewportEnter={() => onEnter(id)}
       viewport={{ once: true, amount: "some" }}
+      style={{ willChange: "transform, opacity" }}
     >
       {children}
     </motion.div>

@@ -5,10 +5,10 @@ import { StaggerReveal } from "@/components/ui/stagger-reveal";
 
 export default function About() {
   return (
-    <div className="padded-content mt-24 mb-16">
+    <div className="padded-content margin-top margin-bottom">
       {/* <h1 className="big-header w-full text-left">About</h1> */}
 
-      <div className="mt-16 flex flex-col md:flex-row gap-16 lg:gap-24 items-start">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-24 items-start">
         {/* <Image
           src="/profile.JPG"
           alt="Image of me at the beach"
@@ -18,7 +18,12 @@ export default function About() {
           className="w-80"
           loading="eager"
         /> */}
-        <UnrollImage src="/profile.JPG" alt="Me at the beach" />
+        <UnrollImage
+          src="/profile.JPG"
+          alt="Me at the beach"
+          width={320}
+          height={426.5}
+        />
 
         <StaggerReveal className="md:w-100 lg:w-140 paragraph grid gap-4 justify-start items-baseline">
           <h2 className="header-2">Thanks for stopping by! 💛</h2>

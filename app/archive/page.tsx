@@ -1,10 +1,11 @@
+import { StaggerReveal } from "@/components/ui/stagger-reveal";
+
 export default function Page() {
   return (
-    <div className="padded-content mt-40 w-full md:px-10 xl:px-20 2xl:px-40">
+    <StaggerReveal className="padded-content margin-top w-full md:px-10 xl:px-20 2xl:px-40">
       <h1 className="section-header">Archive</h1>
-      <p className="paragraph italic">Never stop sidequesting.</p>
 
-      <p className="paragraph mt-8">Under construction.</p>
-    </div>
+      <p className="paragraph mt-4">🚧 Under construction 🚧</p>
+    </StaggerReveal>
   );
 }
