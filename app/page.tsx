@@ -72,7 +72,7 @@ export default function Home() {
 
       <section
         id="contact"
-        className="padded-content mt-10 text-center w-full bg-olive-700 dark:bg-olive-950/50 py-20"
+        className="padded-content mt-10 text-center w-full bg-neutral-700 dark:bg-neutral-950/50 py-20"
       >
         <h1 className="font-serif font-normal text-3xl md:text-4xl text-zinc-100 dark:text-zinc-300 mb-4">
           Let&apos;s get in touch!

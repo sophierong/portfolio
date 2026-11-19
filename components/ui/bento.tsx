@@ -14,6 +14,7 @@ export const Bento = ({
         sm:grid sm:gap-4
         sm:grid-cols-[4fr_5fr]
         md:flex md:flex-col md:justify-start
+        md:gap-2
         min-w-0
       "
     >

@@ -5,7 +5,7 @@ const Hero = () => {
     "Sophie Rong is a creator, artist, and developer. She loves intuitive interfaces & thoughtful technology.";
 
   return (
-    <div className="padded-content h-screen flex flex-col items-start justify-end padded-bottom">
+    <div className="padded-content h-screen flex flex-col items-start justify-end pb-16 md:pb-24">
       <div className="z-30">
         <TextGenerateEffect
           words={slogan}

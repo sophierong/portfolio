@@ -20,9 +20,9 @@ export const ProjectCard = ({
     <CardContainer>
       <CardBody
         className="
-        relative group/card hover:shadow-2xl hover:shadow-indigo-600/20
+        relative group/card hover:shadow-xl hover:shadow-accent-base/40
         transition-all ease-in-out duration-300
-        w-[84vw] md:w-[36vw] lg:w-[32vw] h-full rounded-xl p-6 border
+        w-[84vw] md:w-[36vw] xl:w-[32vw] h-full rounded-xl p-6 border
         hover:cursor-pointer"
       >
         <Link href={link} target="_blank">
